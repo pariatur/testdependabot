@@ -1,0 +1,53 @@
+{
+  // Descripción: Archivo con vulnerabilidades, extraído de Tenable
+  // Formato    : JSON
+  "TenableVulnerabilities": "C:\\dev\\code\\ParseTenable\\files\\vulnerabilities-06_12_2024_-17_44_17-gmt-4.json",
+
+  // Descripción: Archivo con los servidores (assets), extraído de Tenable
+  // Formato    : CSV
+  "TenableAssets": "C:\\dev\\code\\ParseTenable\\files\\host-assets-06_12_2024_-17_45_46-gmt-4.csv",
+
+  // Descripción: Archivo con la verdadera versión del sistema operativo detectado parcialmente con Tenable
+  // Formato    : CSV
+  "OSRealVersion": "C:\\dev\\code\\ParseTenable\\files\\SistemaOperativo;VersiónReal.csv",
+
+  // Descripción: Fechas de fin de soporte para los sistemas operativos (EOL)
+  // Formato    : CSV
+  "OSSupportDates": "C:\\dev\\code\\ParseTenable\\files\\SistemaOperativo;FechasSoporte.csv",
+
+  // Descripción: Listado de equipos extraídos desde AD, con un script de powershell
+  // Formato    : CSV
+  "DeviceList": "C:\\dev\\code\\ParseTenable\\files\\Listado_Equipos_06-12-2024_04-35-13.csv",
+
+  // Descripción: Listado de servidores con excepción, es decir, que se ha aceptado el riesgo de su obsolecencia.
+  // Formato    : CSV
+  "ExceptionServers": "C:\\dev\\code\\ParseTenable\\files\\ServidoresConExcepción.csv",
+
+  // Descripción: Ciertos servidores, están registrados en Tenable, sin embargo, no están en AD, acá está su verdadero OS
+  // Formato    : CSV
+  "OSManualInput": "C:\\dev\\code\\ParseTenable\\files\\SistemaOperativo;IngresoManual.csv",
+
+  // Descripción: Sufijo para el archivo de salida
+  "OutputFileSufix": "Tenable",
+  // Descripción: Carpeta donde se depositará el archivo de salida
+  "OutputFolder": "C:\\dev\\code\\ParseTenable\\output",
+
+  // Descripción: Valor que se dará a la columna "SO soportado" cuando se encuentre un sistema operativo desconocido
+  "UnknownOperatingSystem": "SO Desconocido",
+
+  // Descripción: Colores
+  "Colors": {
+    "Severity": {
+      "Critical": "#7030A0",
+      "High": "#EF3340",
+      "Medium": "#FFD700",
+      "Low": "#0072CE",
+      "ForeBright": "#FFFFFF",
+      "ForeDark": "#000000"
+    },
+    "Eol": {
+      "Positive": "#0072CE",
+      "Negative": "#EF3340"
+    }
+  }
+}
